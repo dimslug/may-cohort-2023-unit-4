@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+    <style>
+        body {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <!-- Finding elements  -->
+    <div id="list">
+        <div id="listTitle">To Do List</div>
+        <div id="toDoList">
+            <ul id="ulToDo">
+                <li class="listItem">Clean Bathroom</li>
+                <li class="listItem">Pack Clothes</li>
+                <li class="listItem">Pack Bathroom Stuff</li>
+                <li class="listItem">Check if doors and windows closed</li>
+                <li class="listItem">Clean Kitchen</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Event Listeners -->
+    <div id="inputfield" style="text-align: center;">
+        <input type="text" id="listInput" placeholder="ToDo Item">
+        <button id="submit">Add Item</button>
+    </div>
+    <!-- inline scripting-->
+    <script>
+        let x = "within the HTML doc wrapped in a script element"
+        //console.log(x);
+        console.log(window);
+        //alert('What are you doing?!')
+        //prompt(); // input field
+        //confirm('Are you sure?'); // boolean
+    </script>
+
+    <!--
+        Externam File Scripting
+            - helps with maintainability
+            - request triggered to obtain script
+    -->
+    <script src="./dom.js"></script>
+</body>
+</html>
